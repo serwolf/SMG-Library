@@ -20,7 +20,7 @@ namespace LibKo.WAPI
             List<T> Lista = new List<T>();
 
             var url = tipo.Name;
-            HttpResponseMessage response = ServiceDataqw.ClientProperties.GetAsync(url).Result;
+            HttpResponseMessage response = ServiceData.ClientProperties.GetAsync(url).Result;
 
             if (response.IsSuccessStatusCode)
             {
@@ -36,7 +36,7 @@ namespace LibKo.WAPI
             List<T> Lista = new List<T>();
 
             var url = URI;
-            HttpResponseMessage response = ServiceDataqw.ClientProperties.GetAsync(url).Result;
+            HttpResponseMessage response = ServiceData.ClientProperties.GetAsync(url).Result;
 
             if (response.IsSuccessStatusCode)
             {
@@ -52,7 +52,7 @@ namespace LibKo.WAPI
             List<T> Lista = new List<T>();
 
             var url = tipo.Name + URI;
-            HttpResponseMessage response = ServiceDataqw.ClientProperties.GetAsync(url).Result;
+            HttpResponseMessage response = ServiceData.ClientProperties.GetAsync(url).Result;
 
             if (response.IsSuccessStatusCode)
             {
@@ -68,7 +68,7 @@ namespace LibKo.WAPI
             T Lista = new T();
 
             var url = tipo.Name + URI;
-            HttpResponseMessage response = ServiceDataqw.ClientProperties.GetAsync(url).Result;
+            HttpResponseMessage response = ServiceData.ClientProperties.GetAsync(url).Result;
 
             if (response.IsSuccessStatusCode)
             {
@@ -84,7 +84,7 @@ namespace LibKo.WAPI
             T Lista = new T();
 
             var url = tipo.Name;
-            HttpResponseMessage response = ServiceDataqw.ClientProperties.GetAsync(url).Result;
+            HttpResponseMessage response = ServiceData.ClientProperties.GetAsync(url).Result;
 
             if (response.IsSuccessStatusCode)
             {
@@ -100,7 +100,7 @@ namespace LibKo.WAPI
             T Lista = new T();
 
             var url = URI;
-            HttpResponseMessage response = ServiceDataqw.ClientProperties.GetAsync(url).Result;
+            HttpResponseMessage response = ServiceData.ClientProperties.GetAsync(url).Result;
 
             if (response.IsSuccessStatusCode)
             {
@@ -120,7 +120,7 @@ namespace LibKo.WAPI
             try
             {
                 var url = s.GetType().Name;
-                var response = ServiceDataqw.ClientProperties.PostAsJsonAsync(url, s).Result;
+                var response = ServiceData.ClientProperties.PostAsJsonAsync(url, s).Result;
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -142,7 +142,7 @@ namespace LibKo.WAPI
             try
             {
                 var url = s.GetType().Name + URI;
-                var response = ServiceDataqw.ClientProperties.PostAsJsonAsync(url, s).Result;
+                var response = ServiceData.ClientProperties.PostAsJsonAsync(url, s).Result;
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -164,7 +164,7 @@ namespace LibKo.WAPI
             try
             {
                 var url = URI;
-                var response = ServiceDataqw.ClientProperties.PostAsJsonAsync(url, s).Result;
+                var response = ServiceData.ClientProperties.PostAsJsonAsync(url, s).Result;
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -189,7 +189,7 @@ namespace LibKo.WAPI
             try
             {
                 var url = s.GetType().Name;
-                var response = ServiceDataqw.ClientProperties.PutAsJsonAsync(url, s).Result;
+                var response = ServiceData.ClientProperties.PutAsJsonAsync(url, s).Result;
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -210,7 +210,7 @@ namespace LibKo.WAPI
             try
             {
                 var url = s.GetType().Name + URI;
-                var response = ServiceDataqw.ClientProperties.PutAsJsonAsync(url, s).Result;
+                var response = ServiceData.ClientProperties.PutAsJsonAsync(url, s).Result;
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -231,7 +231,7 @@ namespace LibKo.WAPI
             try
             {
                 var url = URI;
-                var response = ServiceDataqw.ClientProperties.PutAsJsonAsync(url, s).Result;
+                var response = ServiceData.ClientProperties.PutAsJsonAsync(url, s).Result;
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -257,7 +257,7 @@ namespace LibKo.WAPI
             {
 
                 var url = URI;
-                var response = ServiceDataqw.ClientProperties.DeleteAsync(url).Result;
+                var response = ServiceData.ClientProperties.DeleteAsync(url).Result;
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -277,7 +277,7 @@ namespace LibKo.WAPI
             {
 
                 var url = URI;
-                var response = ServiceDataqw.ClientProperties.DeleteAsync(url).Result;
+                var response = ServiceData.ClientProperties.DeleteAsync(url).Result;
 
                 s = response.IsSuccessStatusCode;
             }

@@ -5,7 +5,7 @@ using System.Net.Http.Headers;
 
 namespace LibKo.ServiceConnection
 {
-    public class Settings1
+    public class Settings
     {
         public static HttpClient ClientProperties()
         {

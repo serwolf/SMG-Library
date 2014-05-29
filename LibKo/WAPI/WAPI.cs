@@ -103,7 +103,7 @@ namespace LibKo.WAPI
             return Lista;
         }
 
-        public static T Get<T>(String ServiceName, params Parameters1[] parameters) where T : new()
+        public static T Get<T>(String ServiceName, params Parameters[] parameters) where T : new()
         {
             T Lista = new T();
 

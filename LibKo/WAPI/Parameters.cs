@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibKo.WAPI
 {
-    public class Parameters1
+    public class Parameters
     {
         private String _Name = "";
 
